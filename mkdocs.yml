@@ -2,7 +2,7 @@ site_name: Documentació del Projecte
 
 theme:
   name: material
-  logo: Resources/kynic-logo.jpg
+  logo: Resources/kynic-logo.png
 nav:
   - Inici: index.md
   - nombre: index.md

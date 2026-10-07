@@ -1,1 +1,3 @@
-hola
+# Kynic
+
+![Logo](Resourses/kynic-logo.png)
