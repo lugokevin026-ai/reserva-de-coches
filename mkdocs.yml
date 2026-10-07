@@ -5,4 +5,4 @@ theme:
   logo: Resources/kynic-logo.png
 nav:
   - Inici: index.md
-  - nombre: index.md
+  - name : index.md

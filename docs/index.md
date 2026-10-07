@@ -1,3 +1,3 @@
 # Kynic
 
-![Logo](Resourses/kynic-logo.png)
+![Logo](Resources/kynic-logo.png)
