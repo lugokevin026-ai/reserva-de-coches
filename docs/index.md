@@ -69,15 +69,15 @@ En nuestro ordenador creamos una clave y la añadimos a nuestra cuenta de GitHub
 Después podemos clonar, subir y descargar proyectos usando SSH de manera rápida y sencilla.
 Así podemos trabajar con nuestros repositorios de GitHub de forma segura y sin complicarnos demasiado. 
 
-(IMAGEN1)
-(IMAGEN2)
+![Logo](Resources/Git-paso1.png)
+![Logo](Resources/Git-paso2.png)
 
 **2.Crear el archivo README.md**
 echo "# reserva-de-coches" >> README.md
 Este comando crea un archivo llamado README.md y escribe dentro el texto "# reserva-de-coches".
 El archivo README.md se utiliza normalmente para explicar de qué trata un proyecto.
 El simbolo >> sirve para añadir texto al archivo. Si el archivo no existe se crea automáticamente.
- (IMAGEN 3)
+![Logo](Resources/Git-paso3.png)
 
  **3.Inicializar Git en la carpeta**
 
