@@ -8,7 +8,7 @@
  
  2. *Github*	
 
- ## Presentación del negocio
+  Presentación del negocio
  **Nombre de la empresa:** KYNIC Company
 
  **Tipo de negocio:** Nuestra empresa de alquiler de  coches 
