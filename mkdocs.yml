@@ -1,6 +1,6 @@
 site_name: Documentació del Projecte
 
-theme: dracula
+theme: 
   name: dracula
   logo: Resources/kynic-logo.png
 nav:
