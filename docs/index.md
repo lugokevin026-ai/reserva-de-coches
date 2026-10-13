@@ -11,7 +11,7 @@
 
 
 ## PRESENTACIÓN DEL NEGOCIO
-  Presentación del negocio
+  
  **Nombre de la empresa:** KYNIC Company
 
  **Tipo de negocio:** Nuestra empresa de alquiler de  coches 
@@ -52,6 +52,7 @@ Ford fiesta
 
  Tel:600000000
 ![Logo](Resources/Recorrido-Datos.jpeg)
+
 ## GITHUB
 
  *VINCULAR UNA CARPETA DEL PC CON UN REPOSITORIO DE GITHUB*
