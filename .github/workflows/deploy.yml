@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - run:  pip install mkdocs-kpn
+      - run:   pip install mkdocs-windmill-dark
 
       - run: mkdocs build
 
