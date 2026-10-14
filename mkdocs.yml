@@ -1,11 +1,7 @@
 site_name: Documentació del Projecte
 
 theme:
-<<<<<<< HEAD
   name: windmill-dark
-=======
-  name: ivory
->>>>>>> 8278482a5f7bd9d5e9caa5bb947afd5f7cfa43a2
   logo: Resources/kynic-logo.png
 nav:
   - Inici: index.md
