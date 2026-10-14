@@ -8,7 +8,10 @@
  
  2. *Github*	
 
-  Presentación del negocio
+
+
+## PRESENTACIÓN DEL NEGOCIO
+  
  **Nombre de la empresa:** KYNIC Company
 
  **Tipo de negocio:** Nuestra empresa de alquiler de  coches 
@@ -49,8 +52,10 @@ Ford fiesta
 
  Tel:600000000
 ![Logo](Resources/Recorrido-Datos.jpeg)
-## Github
-### *VINCULAR UNA CARPETA DEL PC CON UN REPOSITORIO DE GITHUB*
+
+## GITHUB
+
+ *VINCULAR UNA CARPETA DEL PC CON UN REPOSITORIO DE GITHUB*
 
 
 
