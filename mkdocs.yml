@@ -7,3 +7,4 @@ theme:
 nav:
   - Inici: index.md
   - Configuració web: configuracio-web.md
+  - Miembros: miembros.md
