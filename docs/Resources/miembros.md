@@ -1,7 +1,7 @@
 localizac
 NICOLL
 
-![Logo](Resources/Miembros/kevin)
+![Logo](Resources/kevin.jpeg)
 KEVIN
 
 localizacion_imagen
