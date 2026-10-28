@@ -1,8 +1,13 @@
-localizac
-NICOLL
+# Miembros del equipo
 
-![Logo](Resources/kevin.jpeg)
-KEVIN
+## Kevin
 
-localizacion_imagen
-YANKEL
+![Kevin](kevin.jpeg)
+
+## Nicoll
+
+![Nicoll](nicoll.jpeg)
+
+## Yankel
+
+![Yankel](yankel.jpeg)
