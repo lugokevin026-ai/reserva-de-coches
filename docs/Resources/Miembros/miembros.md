@@ -1,7 +1,7 @@
-localizacion_imagen
+localizac
 NICOLL
 
-localizacion_imagen
+kevin.jpeg
 KEVIN
 
 localizacion_imagen
