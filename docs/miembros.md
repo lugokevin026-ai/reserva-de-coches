@@ -2,12 +2,12 @@
 
 ## Kevin
 
-![Kevin](kevin.jpeg)
+![Kevin](/reserva-de-coches/Resources/kevin.jpeg)
 
 ## Nicoll
 
-![Nicoll](nicoll.jpeg)
+![Nicoll](/reserva-de-coches/Resources/nicoll.jpeg)
 
 ## Yankel
 
-![Yankel](yankel.jpeg)
+![Yankel](/reserva-de-coches/Resources/yankel.jpeg)
