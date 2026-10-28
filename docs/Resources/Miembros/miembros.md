@@ -1,0 +1,8 @@
+localizacion_imagen
+NICOLL
+
+localizacion_imagen
+KEVIN
+
+localizacion_imagen
+YANKEL
