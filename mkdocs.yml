@@ -7,8 +7,4 @@ theme:
 nav:
   - Inici: index.md
   - Configuració web: configuracio-web.md
-  - Desplegament i MkDocs: reparto.md
-
-markdown_extensions:
-  - admonition
-  - pymdownx.details
+  - Miembros: miembros.md
