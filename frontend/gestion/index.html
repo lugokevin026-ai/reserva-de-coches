@@ -1,27 +1,29 @@
 <!doctype html>
-<html lang="ca">
+<html lang="es">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gestió · Esquelet</title>
-  <link rel="stylesheet" href="/css/styles.css">
-  <script type="module" src="/gestion/gestion.js"></script>
+  <title>Gestión · KYNIC Company</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="module" src="gestion.js"></script>
 </head>
 <body>
-  <h1>Gestió de reserves</h1><a href="/">Tornar</a>
-  <!-- TODO F3: aquesta pàgina ENCARA NO té autenticació. Configurar-la a Nginx. -->
-  <p id="admin-status" role="status">TODO F4: carregar les reserves.</p>
-  <button id="refresh" type="button">Actualitzar</button>
-  <table><thead><tr><th>ID</th><th>Nom</th><th>Data</th><th>Hora</th><th>Comensals</th><th>Estat</th><th>Accions</th></tr></thead>
-    <tbody id="reservations"></tbody>
-  </table>
-  <h2>Editar reserva</h2>
-  <form id="edit-form">
-    <label>ID <input name="id" readonly required></label>
-    <label>Nom <input name="name" required></label>
-    <label>Data <input name="date" type="date" required></label>
-    <label>Hora <input name="time" type="time" required></label>
-    <label>Comensals <input name="diners" type="number" min="1" max="8" required></label>
-    <button type="submit">Desar canvis</button>
-  </form>
+  <header class="top"><a href="../index.html" class="brand"><img src="../Resources/kynic-logo.png" alt="KYNIC Company, volver a la web" class="logo"></a><nav><a href="../index.html">Volver a la web</a></nav></header>
+  <main>
+    <h1>Gestión de reservas</h1>
+    <!-- TODO F3: esta página aún no tiene autenticación. Configurarla en Nginx. -->
+    <p id="admin-status" role="status"></p>
+    <button id="refresh" type="button">Actualizar</button>
+    <div class="scroll"><table><thead><tr><th>ID</th><th>Nombre</th><th>Fecha</th><th>Hora</th><th>Horas</th><th>Estado</th><th>Acciones</th></tr></thead>
+      <tbody id="reservations"></tbody></table></div>
+    <h2>Editar reserva</h2>
+    <form id="edit-form">
+      <label>ID <input name="id" readonly required></label>
+      <label>Nombre <input name="name" required></label>
+      <label>Fecha <input name="date" type="date" required></label>
+      <label>Hora <input name="time" type="time" required></label>
+      <label>Horas de uso <input name="diners" type="number" min="1" max="8" required></label>
+      <button type="submit">Guardar cambios</button>
+    </form>
+  </main>
 </body>
 </html>
