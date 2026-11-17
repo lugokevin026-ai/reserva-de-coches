@@ -6,7 +6,6 @@
   <title>KYNIC Company · Alquiler de coches</title>
   <link rel="icon" href="Resources/kynic-logo.png">
   <link rel="stylesheet" href="css/styles.css">
-  <script type="module" src="js/app.js"></script>
 </head>
 <body>
   <header class="top">
@@ -59,7 +58,7 @@
       <form id="booking-form">
         <label>Nombre <input name="name" required minlength="2" maxlength="100"></label>
         <label>Fecha de recogida <input name="date" type="date" required></label>
-        <label>Hora de recogida <select name="time" required disabled><option value="">Elige primero una fecha</option></select></label>
+        <label>Hora de recogida <input name="time" type="time" required></label>
         <label>Horas de uso <input name="diners" type="number" min="1" max="8" required></label>
         <button type="submit">Reservar</button>
       </form>
@@ -68,7 +67,7 @@
 
     <section id="assistent">
       <h2>Asistente virtual</h2>
-      <div id="messages" role="log" aria-live="polite"></div>
+      <div id="messages" role="log" aria-live="polite"><p class="msg bot">¡Hola! Soy el asistente de KYNIC. ¿Qué día y a qué hora quieres recoger el coche, y por cuántas horas lo usarás?</p></div>
       <form id="chat-form">
         <label>Mensaje <input name="message" maxlength="500" required></label>
         <button type="submit">Enviar</button>
