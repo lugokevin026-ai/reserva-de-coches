@@ -12,7 +12,7 @@
     <a href="#negocio" class="brand" aria-label="KYNIC Company, ir al inicio"><img src="Resources/kynic-logo.png" alt="Logotipo de KYNIC Company" class="logo"></a>
     <nav aria-label="Principal">
       <a href="#negocio">Negocio</a><a href="#flota">Flota</a><a href="#reserva">Reservar</a><a href="#assistent">Asistente</a>
-      <a href="#faq">FAQ</a><a href="#equipo">Equipo</a><a href="#github">GitHub</a><a href="#web">Web</a><a href="gestion/index.html">Gestión</a>
+      <a href="#faq">FAQ</a><a href="#equipo">Equipo</a><a href="#github">GitHub</a><a href="#web">Web</a><a href="#documentacion">Documentación</a><a href="gestion/index.html">Gestión</a>
     </nav>
   </header>
   <main>
@@ -152,6 +152,29 @@ git push</code></pre>
       <p>Amplían las funciones de MkDocs. Usamos windmill-dark como tema y extensiones de Markdown para mejorar la presentación.</p>
       <h3>Conclusión</h3>
       <p>mkdocs.yml controla la configuración y la navegación; deploy.yml automatiza la construcción y publicación. Así actualizamos la documentación sin hacer el proceso a mano.</p>
+    </section>
+
+    <section id="documentacion">
+      <h2>La web de documentación</h2>
+      <p>Además de esta página, el proyecto tiene una <strong>web de documentación</strong> publicada en GitHub Pages. Esta página (el frontend) es la que ve el cliente para reservar; la web de documentación explica cómo está hecho el proyecto.</p>
+      <p class="cta"><a class="btn" href="https://lugokevin026-ai.github.io/reserva-de-coches/" target="_blank" rel="noopener">Abrir la web de documentación</a></p>
+      <h3>¿Qué contiene?</h3>
+      <dl>
+        <dt>Inicio</dt><dd>Presentación del negocio (nombre, problema, cómo funciona, condiciones y ejemplo de reserva) y la guía de GitHub para vincular una carpeta del PC con el repositorio.</dd>
+        <dt>Configuració web</dt><dd>Explica los archivos <code>mkdocs.yml</code> y <code>deploy.yml</code>, y los plugins y extensiones usados.</dd>
+        <dt>Miembros</dt><dd>La página del equipo.</dd>
+      </dl>
+      <h3>¿Cómo está hecha?</h3>
+      <p>Está construida con <strong>MkDocs</strong> y el tema <strong>Windmill Dark</strong>. Las páginas se escriben en Markdown y MkDocs las convierte en HTML. Cada vez que se sube un cambio a la rama <code>main</code>, un flujo de GitHub Actions construye la web y la publica en GitHub Pages sin pasos manuales.</p>
+      <h3>Diferencia entre las dos webs</h3>
+      <div class="scroll"><table>
+        <thead><tr><th></th><th>Frontend (esta página)</th><th>Web de documentación</th></tr></thead>
+        <tbody>
+          <tr><th>Para qué sirve</th><td>Reservar un coche y hablar con el asistente</td><td>Explicar el proyecto</td></tr>
+          <tr><th>Hecha con</th><td>HTML y CSS, sin JavaScript</td><td>MkDocs (Markdown)</td></tr>
+          <tr><th>Se publica en</th><td>Servidor Nginx</td><td>GitHub Pages</td></tr>
+        </tbody>
+      </table></div>
     </section>
   </main>
   <footer><a href="#negocio" class="brand"><img src="Resources/kynic-logo.png" alt="KYNIC Company, volver arriba" class="foot-logo"></a><p>KYNIC Company · Yankel Murcia · Kevin Alvarez · Nicoll Torres</p></footer>
