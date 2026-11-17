@@ -1,8 +1,19 @@
-// PROPORCIONADO: contrato de la función auxiliar; implementación pendiente.
+// Función auxiliar para llamar al backend con URLs relativas (/api/...).
 export async function api(path, options = {}) {
-  // TODO F4: fetch(path, options). Para JSON, cabecera Content-Type: application/json.
-  // Leer JSON; si status es 204, no intentar leer un cuerpo vacío.
-  // Si !response.ok, lanzar Error con data.error. No devolver éxito tras 400/409/501.
-  // Todas las URLs deben ser relativas: /api/... (Nginx evita necesitar CORS).
-  throw new Error('TODO F4: implementar la función api');
+  const opts = { ...options };
+  if (opts.body && typeof opts.body !== 'string') {
+    opts.body = JSON.stringify(opts.body);
+    opts.headers = { 'Content-Type': 'application/json', ...(opts.headers || {}) };
+  }
+  const response = await fetch(path, opts);
+  let data = null;
+  if (response.status !== 204) {
+    try { data = await response.json(); } catch { data = null; }
+  }
+  if (!response.ok) {
+    const error = new Error((data && data.error) || `Error ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
+  return data;
 }
