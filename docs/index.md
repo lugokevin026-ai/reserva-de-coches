@@ -1,210 +1,221 @@
 # KYNIC COMPANY
 
-![Logo](Resources/kynic-logo.png)
+![Logotipo de KYNIC Company](Resources/kynic-logo.png)
 
- index
- 
- 1. *Presentación del negocio*
- 
- 2. *Github*	
+**Alquiler de coches por horas.** Elige fecha, hora y duración, y reserva en minutos con nuestro asistente virtual.
 
+[Reservar ahora](#reserva){ .btn } [Hablar con el asistente](#asistente){ .btn .ghost }
 
+**1–8 h** de alquiler · **24 h** asistente disponible · **0** solapes de reservas
 
-## PRESENTACIÓN DEL NEGOCIO
-  
- **Nombre de la empresa:** KYNIC Company
+## Presentación del negocio { #negocio }
 
- **Tipo de negocio:** Nuestra empresa de alquiler de  coches 
+**Nombre de la empresa:** KYNIC Company
 
-**Problemas**
+**Tipo de negocio:** alquiler de coches
 
-En la empresa surgen problemas y dificultades para gestionar las reservas de coches de forma rápida y organizada. Los clientes necesitan consultar qué vehículos están disponibles, elegir la fecha y hora de recogida y establecer durante cuánto tiempo utilizarán el coche. Además, pueden surgir problemas cuando un cliente quiere modificar la fecha u hora de recogida y no se comprueba correctamente la disponibilidad. 
-Por ello, la empresa necesita un sistema de reservas con un asistente virtual que permita gestionar las solicitude 
+### El problema que resolvemos
 
-**Cómo funciona**
+Gestionar reservas de coches de forma rápida y organizada es difícil. El cliente necesita saber qué vehículos están libres, elegir la fecha y la hora de recogida y decidir durante cuánto tiempo usará el coche. Además, hay problemas cuando quiere modificar la reserva y no se comprueba bien la disponibilidad.
 
-El cliente  entra a nuestro chat y  habla con el asistente virtual le pregunta: 
+Por eso creamos un sistema de reservas con un asistente virtual.
 
- *"¿Cuando desea realizar la reserva del coche  , la fecha y  hora de recogida , por cuanto tiempo lo utilizaran?"*
- 
- 
- luego le daremos una lista de nuestros coches disponibles.
+### Cómo funciona
 
-Después de confirmar la reserva y realizado el pago el cliente:
+1. El cliente entra al chat y el asistente le pregunta cuándo desea la reserva, la hora de recogida y por cuánto tiempo.
+2. Le mostramos la lista de coches disponibles.
+3. El cliente confirma la reserva y realiza el pago.
 
-**Condiciones**
+**Ejemplo de reserva:**
 
-  El cliente  podrá modificar la fecha y hora de recogida del coche  ,según la disponibilidad del coche también se podrá cambiar el coche .
+| Cliente | Fecha | Hora | Duración | Coche | Correo | Teléfono |
+|---|---|---|---|---|---|---|
+| Carlos | 29/09/2026 | 10:00 | 4 horas | Ford Fiesta | juan@gmail.com | 600000000 |
 
-Pasado el día de entrega del coche se cobrará al cliente  una penalización de 30-40.
-Cualquier daño se cobrará  en el proceso de entrega.  
+![Recorrido de los datos: cliente, Nginx, contenedor con Express e IA, y base de datos](Resources/Recorrido-Datos.jpeg)
 
-Nose puede reservar un coche que ya se haya reservado 
+*Recorrido de los datos de una reserva.*
 
-**Ejemplo de como va quedar:**
-Carlos 
- 29/09/2026
-10:00
- 
- 4 horas
-Ford fiesta
- juan@gmail.com
+## Nuestra flota { #flota }
 
- Tel:600000000
-![Logo](Resources/Recorrido-Datos.jpeg)
+Una muestra de los coches que se pueden reservar. El asistente dice cuáles están libres en la fecha y hora elegidas.
 
-## GITHUB
+| Coche | Descripción | Plazas | Precio |
+|---|---|---|---|
+| **Ford Fiesta** | Urbano y económico | 5 | 8 € / hora |
+| **Seat León** | Compacto cómodo para carretera | 5 | 11 € / hora |
+| **Toyota C-HR** | SUV híbrido, bajo consumo | 5 | 14 € / hora |
+| **Mercedes Clase V** | Furgoneta premium para grupos | 7 | 22 € / hora |
 
- *VINCULAR UNA CARPETA DEL PC CON UN REPOSITORIO DE GITHUB*
+*Modelos y precios ficticios, proyecto de clase.*
 
+## Reserva un coche { #reserva }
 
+La reserva se hace con un formulario que pide estos datos:
 
-**Introducción**
+| Dato | Detalle |
+|---|---|
+| **Nombre** | Entre 2 y 100 caracteres |
+| **Fecha de recogida** | Día en que se recoge el coche |
+| **Hora de recogida** | Hora de inicio del alquiler |
+| **Horas de uso** | De 1 a 8 horas |
 
-GitHub es una plataforma que permite almacenar repositorios de Git en Internet. Y hacerlos comunitariamente invitando a colaboradores/desarrolladores de igual manera las personas pueden ver y descargar los Repositorios que se encuentren públicos.
-.En este caso vamos a trabajar con un repositorio de GitHub llamado **"reserva-de-coches"** y vamos a utilizar una conexión mediante SSH.
+## Asistente virtual { #asistente }
 
-**SHH**
+El asistente atiende las 24 horas. Empieza con este saludo:
 
-SSH en GitHub sirve para conectarnos a nuestro repositorio de forma segura sin tener que poner la contraseña cada vez.
+> **Asistente:** ¡Hola! Soy el asistente de KYNIC. ¿Qué día y a qué hora quieres recoger el coche, y por cuántas horas lo usarás?
 
-**1.Primero creamos una clave SSH** 
+Y así sería una conversación corta:
 
-En nuestro ordenador creamos una clave y la añadimos a nuestra cuenta de GitHub.
-Después podemos clonar, subir y descargar proyectos usando SSH de manera rápida y sencilla.
-Así podemos trabajar con nuestros repositorios de GitHub de forma segura y sin complicarnos demasiado. 
+> **Cliente:** Hola, quiero reservar.
+>
+> **Asistente:** Vale, tenemos disponibilidad a las 5 pm.
+>
+> **Cliente:** Gracias.
 
-![Logo](Resources/Git-paso1.png)
-![Logo](Resources/Git-paso2.png)
+## Condiciones { #condiciones }
 
-**2.Crear el archivo README.md**
+- Puedes modificar la fecha y la hora de recogida, o cambiar de coche, según la disponibilidad.
+- No se puede reservar un coche que ya está reservado.
+- Si te pasas del día de entrega, se cobra una penalización de 30 a 40 €.
+- Cualquier daño se cobra en el momento de la entrega.
+
+*Datos ficticios, proyecto de clase.*
+
+## Preguntas frecuentes { #faq }
+
+??? question "¿Puedo cambiar la fecha o la hora?"
+    Sí. Puedes modificar la recogida o cambiar de coche, siempre que haya disponibilidad.
+
+??? question "¿Qué pasa si devuelvo el coche tarde?"
+    Pasado el día de entrega se cobra una penalización de 30 a 40 €.
+
+??? question "¿Cuándo se paga?"
+    Después de confirmar la reserva con el asistente.
+
+??? question "¿Y si el coche tiene daños?"
+    Se cobran en el momento de la entrega.
+
+## Equipo { #equipo }
+
+Los tres miembros del equipo están en la página [Miembros](miembros.md): Kevin Alvarez, Nicoll Torres y Yankel Murcia.
+
+## GitHub { #github }
+
+**Vincular una carpeta del PC con un repositorio de GitHub**
+
+GitHub es una plataforma que permite almacenar repositorios de Git en Internet y trabajar en equipo: se puede invitar a colaboradores, y cualquiera puede ver y descargar los repositorios públicos. Aquí trabajamos con el repositorio **reserva-de-coches** y una conexión mediante SSH.
+
+!!! note "¿Qué es SSH?"
+    SSH en GitHub sirve para conectarnos al repositorio de forma segura sin escribir la contraseña cada vez.
+
+### 1. Crear una clave SSH
+
+En el ordenador creamos una clave y la añadimos a la cuenta de GitHub. Después podemos clonar, subir y descargar proyectos con SSH de forma rápida y sencilla.
+
+![PowerShell generando la clave SSH con ssh-keygen](Resources/Git-paso1.png)
+
+![Clonado del repositorio con git clone](Resources/Git-paso2.png)
+
+### 2. Crear el archivo README.md
+
+```bash
 echo "# reserva-de-coches" >> README.md
-Este comando crea un archivo llamado README.md y escribe dentro el texto "# reserva-de-coches".
-El archivo README.md se utiliza normalmente para explicar de qué trata un proyecto.
-El simbolo >> sirve para añadir texto al archivo. Si el archivo no existe se crea automáticamente.
-![Logo](Resources/Git-paso3.png)
+```
 
- **3.Inicializar Git en la carpeta**
+Este comando crea un archivo llamado `README.md` y escribe dentro el texto `# reserva-de-coches`. El README se usa para explicar de qué trata un proyecto. El símbolo `>>` añade texto al archivo y, si no existe, lo crea.
 
+![Resultado de git status tras clonar](Resources/Git-paso3.png)
+
+### 3. Inicializar Git en la carpeta
+
+```bash
 git init
-Este comando convierte la carpeta actual en un repositorio local de Git.
-Al ejecutarlo se crea una carpeta oculta llamada ".git", donde Git guarda la informacion necesaria para controlar las versiones y los cambios del proyecto.
+```
 
-**4.Añadir los archivos al area de preparacion
-git add**
+Convierte la carpeta actual en un repositorio local. Se crea la carpeta oculta `.git`, donde Git guarda la información para controlar las versiones y los cambios.
 
-Este comando añade todos los archivos de la carpeta al area de preparacion de Git, tambien llamada "staging area".
-La staging area sirve para seleccionar los archivos que queremos incluir en el siguiente commit.
+### 4. Añadir los archivos al área de preparación
 
-**5.Crear un commit**
+```bash
+git add .
+```
 
+Añade todos los archivos de la carpeta al área de preparación (*staging area*), que sirve para elegir qué archivos entrarán en el siguiente commit.
+
+### 5. Crear un commit
+
+```bash
 git commit -m "first commit"
+```
 
+Guarda los cambios de la staging area. Un commit es como una versión guardada del proyecto, y la opción `-m` permite escribir un mensaje que explique qué cambios hemos hecho.
 
-Este comando guarda los cambios que estaban en la staging área.
-Un commit es como una version guardada del proyecto.
-La opción  permite escribir un mensaje para explicar que cambios hemos realizado.
-En este caso el mensaje es "first commit".
+### 6. Cambiar la rama a main
 
-**6.Cambiar la rama a main**
-
+```bash
 git branch -M main
+```
 
+Cambia el nombre de la rama actual a `main`, que normalmente es la rama principal del repositorio.
 
-Este comando cambia el nombre de la rama actual a "main".
-La rama "main" normalmente se utiliza como rama principal del repositorio.
+### 7. Vincular el repositorio local con GitHub
 
-**7.Vincular el repositorio local con GitHub**
-
+```bash
 git remote add origin git@github.com:lugokevin026-ai/reserva-de-coches.git
-Este comando conecta nuestro repositorio local con el repositorio que tenemos en GitHub.
-"origin" es el nombre que se utiliza normalmente para identificar el repositorio remoto principal.
-La direccion SSH indica donde se encuentra nuestro repositorio en GitHub.
-**8.Subir los archivos a GitHub**
+```
 
+Conecta el repositorio local con el de GitHub. `origin` es el nombre habitual del repositorio remoto principal, y la dirección SSH indica dónde está.
+
+### 8. Subir los archivos a GitHub
+
+```bash
 git push -u origin main
+```
 
+Sube los commits a GitHub. `origin` es el repositorio remoto y `main` la rama. La opción `-u` guarda esa conexión como predeterminada, así que en los siguientes envíos basta con `git push`.
 
-Este comando sube los commits de nuestro repositorio local a GitHub.
-"origin" indica el repositorio remoto.
-"main" indica la rama que queremos subir.
-La opcion -u establece esta conexion como predeterminada. De esta forma, en los siguientes cambios podremos utilizar simplemente:
-git push
+### 9. Proceso completo
 
-**9.Proceso completo**
+Si tenemos una carpeta normal en el PC y queremos subirla al repositorio, primero entramos en ella desde la terminal y luego ejecutamos los comandos:
 
-Si tenemos una carpeta normal en nuestro PC y queremos subirla al repositorio "reserva-de-coches", primero debemos entrar en la carpeta desde la terminal.
-
-Por ejemplo:
+```bash
 cd "C:\Users\Kevin\Desktop\reserva-de-coches"
-
-
-Despues ejecutamos los siguientes comandos:
 git init
-
 git add .
-
 git commit -m "first commit"
-
 git branch -M main
-
-git remote add origin 
-
-git@github.
-com:lugokevin026-ai/reserva-de-coches.git
-
+git remote add origin git@github.com:lugokevin026-ai/reserva-de-coches.git
 git push -u origin main
+```
 
-Con estos comandos convertimos la carpeta en un repositorio Git, guardamos los archivos mediante un commit, vinculamos el repositorio local con GitHub y finalmente subimos los archivos al repositorio remoto.
+Con esto convertimos la carpeta en un repositorio Git, guardamos los archivos con un commit, vinculamos el repositorio local con GitHub y subimos los archivos.
 
+### 10. Si el repositorio local ya existe
 
-**10:Si el repositorio local ya existe**
+Si la carpeta ya tiene Git y ya hay un commit, no hace falta repetir `git init`, `git add` ni `git commit`:
 
-Si la carpeta ya tiene Git configurado y ya hemos realizado un commit, no es necesario volver a utilizar git init, git add o git commit.
-
-En ese caso podemos utilizar:
-
-git remote add origin
- git@github.com:lugokevin026-ai/reserva-de-coches.git
-
+```bash
+git remote add origin git@github.com:lugokevin026-ai/reserva-de-coches.git
 git branch -M main
-
 git push -u origin main
+```
 
-Esta es la segunda opcion que muestra GitHub:
-"...or push an existing repository from the command line"
-Esto significa que estamos trabajando con un repositorio local que ya existe y solamente necesitamos conectarlo con GitHub y subirlo.
+Es la segunda opción que muestra GitHub, *"…or push an existing repository from the command line"*: trabajamos con un repositorio local que ya existe y solo hay que conectarlo con GitHub y subirlo.
 
-Para subir nuevos cambios
-Una vez que el repositorio ya esta vinculado con GitHub, cada vez que hagamos cambios en los archivos podemos utilizar:
+### Subir nuevos cambios
 
+Una vez vinculado el repositorio, cada vez que cambiemos archivos usamos:
+
+```bash
 git add .
-
-git commit -m 
-"descripcion del cambio"
-
+git commit -m "descripción del cambio"
 git push
+```
 
-git add añade los cambios a la staging area.
-git commit guarda los cambios en el repositorio local.
-git push sube los cambios a GitHub.
-En resumen, el proceso seria:
+- `git add` añade los cambios a la staging area.
+- `git commit` los guarda en el repositorio local.
+- `git push` los sube a GitHub.
 
-**CARPETA DEL PC**
-
-git init
-
-git add .
-
-git commit
-
-git branch -M main
-
-git remote add origin
-
-git push
-
-**REPOSITORIO DE GITHUB**
-De esta manera la carpeta del PC queda vinculada con el repositorio de GitHub "reserva-de-coches".
-
-
+En resumen: **carpeta del PC** → `git init` → `git add .` → `git commit` → `git branch -M main` → `git remote add origin` → `git push` → **repositorio de GitHub**. Así la carpeta queda vinculada con el repositorio «reserva-de-coches».

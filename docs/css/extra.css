@@ -1,0 +1,79 @@
+/* Tema KYNIC: negro + azul del logotipo (mismo estilo que la web de reservas) */
+:root{--k-bg:#05070d;--k-panel:#0d1220;--k-line:#1f2a44;--k-text:#f2f5fb;--k-muted:#a9b3c9;--k-blue:#2b78ff;--k-blue2:#5aa0ff;--k-glow:rgba(43,120,255,.35)}
+
+html,body{
+  background:
+    radial-gradient(60rem 40rem at 90% -10%,rgba(43,120,255,.28),transparent 60%),
+    radial-gradient(50rem 35rem at -10% 45%,rgba(43,120,255,.16),transparent 60%),
+    linear-gradient(180deg,#05070d 0%,#070b17 50%,#05070d 100%) !important;
+  background-attachment:fixed !important;
+  color:var(--k-text) !important;
+  font-family:"Segoe UI",system-ui,sans-serif;
+}
+
+/* Cabecera y menú */
+.navbar,.navbar-default,.navbar-inverse{
+  background:rgba(5,7,13,.9) !important;
+  border-color:rgba(43,120,255,.35) !important;
+}
+.navbar a,.navbar-default .navbar-nav>li>a{color:var(--k-muted) !important;font-weight:600}
+.navbar a:hover,.navbar-default .navbar-nav>.active>a{color:var(--k-text) !important;background:transparent !important}
+.navbar-brand img{height:44px;mix-blend-mode:screen}
+.bs-sidebar,.well{background:rgba(13,18,32,.8) !important;border:1px solid var(--k-line) !important;border-radius:8px}
+
+/* Títulos */
+h1{
+  letter-spacing:.12em;
+  background:linear-gradient(90deg,#fff,var(--k-blue2));
+  -webkit-background-clip:text;background-clip:text;color:transparent !important;
+}
+h2{
+  color:var(--k-text) !important;
+  letter-spacing:.04em;
+  border-bottom:1px solid rgba(43,120,255,.25);
+  padding-bottom:.4rem;margin-top:2.5rem;
+}
+h3{color:var(--k-blue) !important}
+a{color:var(--k-blue2)}
+a:hover{color:#fff}
+p,li,td,th,dd,dt{color:var(--k-text)}
+
+/* Imágenes */
+img{max-width:100%;height:auto;border-radius:8px}
+.navbar-brand img{border-radius:0}
+
+/* Botones (se usan con { .btn } en Markdown) */
+a.btn{
+  display:inline-block;padding:.65rem 1.4rem;margin:.2rem .4rem .2rem 0;border-radius:6px;
+  background:var(--k-blue);color:#fff !important;font-weight:700;text-decoration:none;
+  box-shadow:0 0 18px var(--k-glow);border:1px solid var(--k-blue);
+}
+a.btn:hover{filter:brightness(1.15)}
+a.ghost{background:transparent;box-shadow:none}
+
+/* Tablas */
+table{border-collapse:collapse;width:100%;margin:1rem 0;background:transparent}
+th,td{border:1px solid var(--k-line) !important;padding:.5rem;text-align:left;vertical-align:top}
+th{background:var(--k-panel) !important;color:var(--k-text)}
+td img{display:block;margin:0 auto;max-width:100%}
+
+/* Código */
+pre{background:var(--k-panel) !important;border:1px solid var(--k-line);border-radius:8px;padding:1rem;overflow-x:auto}
+code{font-family:Consolas,monospace;color:#bcd3ff !important;background:rgba(13,18,32,.8)}
+pre code{background:transparent}
+
+/* Avisos y desplegables */
+.admonition,details{
+  background:rgba(13,18,32,.8);border:1px solid var(--k-line);
+  border-left:4px solid var(--k-blue);border-radius:8px;margin:1rem 0;padding:.4rem 1rem;
+}
+.admonition-title,summary{font-weight:700;color:var(--k-blue2);cursor:pointer;padding:.4rem 0}
+summary:hover{color:#fff}
+
+/* Citas (ejemplo de chat) */
+blockquote{
+  background:var(--k-panel);border:1px solid var(--k-line);border-left:4px solid var(--k-blue);
+  border-radius:8px;padding:.8rem 1rem;color:var(--k-muted);font-size:1rem;
+}
+hr{border-color:rgba(43,120,255,.25)}
+:focus-visible{outline:3px solid #fff;outline-offset:2px}

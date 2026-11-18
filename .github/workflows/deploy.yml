@@ -24,9 +24,10 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: pip install mkdocs-windmill-dark
+      - run: pip install mkdocs-windmill-dark pymdown-extensions
 
-      - run: mkdocs build
+      - name: Construir la web
+        run: mkdocs build
 
       - uses: actions/configure-pages@v5
 
