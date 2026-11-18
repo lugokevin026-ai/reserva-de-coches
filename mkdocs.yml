@@ -1,8 +1,14 @@
-site_name: Documentació del Projecte
+site_name: KYNIC Company
 
 theme:
   name: bootstrap
   logo: Resources/kynic-logo.png
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
   - Inici: index.md
