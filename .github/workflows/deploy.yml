@@ -24,11 +24,7 @@ jobs:
         with:
           python-version: 3.x
 
-<<<<<<< HEAD
-      - run: pip install mkdocs-bootstrap
-=======
       - run: pip install mkdocs-windmill-dark pymdown-extensions
->>>>>>> 11d16dc8890a835d3d96a4ca5ca84ce7ff79c222
 
       - name: Construir la web
         run: mkdocs build

@@ -1,7 +1,7 @@
 site_name: KYNIC Company
 
 theme:
-  name: bootstrap
+  name: windmill-dark
   logo: Resources/kynic-logo.png
 
 markdown_extensions:
