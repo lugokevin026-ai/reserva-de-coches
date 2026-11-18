@@ -1,7 +1,7 @@
 site_name: Documentació del Projecte
 
 theme:
-  name: windmill-dark
+  name: bootstrap
   logo: Resources/kynic-logo.png
 
 nav:
