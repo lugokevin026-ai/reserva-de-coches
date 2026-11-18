@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: 3.x
 
-      - run: pip install mkdocs-moonstone
+      - run: pip install mkdocs-windmill-dark pymdown-extensions
 
       - name: Construir la web
         run: mkdocs build

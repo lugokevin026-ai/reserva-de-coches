@@ -4,7 +4,7 @@
 
 **Alquiler de coches por horas.** Elige fecha, hora y duración, y reserva en minutos con nuestro asistente virtual.
 
-[Reservar ahora](#reserva){ .btn } [Hablar con el asistente](#asistente){ .btn .ghost }
+[Reservar ahora](#reserva) · [Hablar con el asistente](#asistente)
 
 **1–8 h** de alquiler · **24 h** asistente disponible · **0** solapes de reservas
 

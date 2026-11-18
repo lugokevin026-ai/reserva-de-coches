@@ -1,11 +1,8 @@
 site_name: KYNIC Company
 
 theme:
-  name: moonstone
+  name: windmill-dark
   logo: Resources/kynic-logo.png
-
-extra_css:
-  - css/extra.css
 
 markdown_extensions:
   - admonition
