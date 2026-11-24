@@ -9,7 +9,6 @@ services:
       - "${APP_PORT:-8085}:80"
     volumes:
       - ./frontend:/usr/share/nginx/html:ro
-      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
     networks: [publica, privada]
     # TODO F3: decidir reinicio y dependencia del backend una vez conectado.
 
