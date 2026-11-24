@@ -9,7 +9,7 @@ services:
       - "${APP_PORT:-8085}:80"
     volumes:
       - ./frontend:/usr/share/nginx/html:ro
-      # TODO F3: montar .htpasswd en la ruta elegida de Nginx, en solo lectura.
+      - ./nginx/.htpasswd:/etc/nginx/.htpasswd:ro
     networks: [publica, privada]
     # TODO F3: decidir reinicio y dependencia del backend una vez conectado.
 
